@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Added google font
+
+index.css uses this import to allow fira sans as a font
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+### installed airbnb style guide
+
+Installed following packages:
+"eslint-config-airbnb": "^19.0.4",
+"eslint-plugin-import": "^2.26.0",
+"eslint-plugin-jsx-a11y": "^6.5.1",
+"eslint-plugin-react": "^7.30.0",
+"eslint-plugin-react-hooks": "^4.5.0"
+
+installed with npm:
+npm i -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+
+changed rule in .eslintrc.json to allow .js and .jsx with prettier as the defalt formatter
+
+nice guide for changes here: https://javascript.plainenglish.io/set-up-react-js-with-eslint-prettier-and-airbnb-cc015363a7c7
