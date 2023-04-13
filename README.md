@@ -86,6 +86,9 @@ Installed following packages:
 installed with npm:
 npm i -D eslint-config-airbnb eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 
+Prettier as a dev dependancy
+npm i -D prettier
+
 changed rule in .eslintrc.json to allow .js and .jsx with prettier as the defalt formatter
 
 nice guide for changes here: https://javascript.plainenglish.io/set-up-react-js-with-eslint-prettier-and-airbnb-cc015363a7c7

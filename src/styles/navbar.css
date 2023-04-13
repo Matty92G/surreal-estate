@@ -1,0 +1,12 @@
+.navbar-links {
+  background-color: grey;
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar-links-item {
+  display: inline-block;
+  font-size: medium;
+  margin: none;
+  padding: 5px;
+}
