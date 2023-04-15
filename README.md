@@ -92,3 +92,7 @@ npm i -D prettier
 changed rule in .eslintrc.json to allow .js and .jsx with prettier as the defalt formatter
 
 nice guide for changes here: https://javascript.plainenglish.io/set-up-react-js-with-eslint-prettier-and-airbnb-cc015363a7c7
+
+### VSCODE end of line edit
+
+change from LF to CRLF in .eslintrc.json
