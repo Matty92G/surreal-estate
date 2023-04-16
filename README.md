@@ -96,3 +96,5 @@ nice guide for changes here: https://javascript.plainenglish.io/set-up-react-js-
 ### VSCODE end of line edit
 
 change from LF to CRLF in .eslintrc.json
+
+check personal Settings for Prettier so they match rules in .eslintrc.json
