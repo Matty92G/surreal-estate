@@ -10,8 +10,8 @@ const App = () => (
     <nav>
       <NavBar />
       <Routes>
-        <Route path="/" element={Properties} />
-        <Route path="add-property" element={AddProperty} />
+        <Route path="/" element={<Properties />} />
+        <Route path="add-property" element={<AddProperty />} />
       </Routes>
     </nav>
     <header className="App-header">
