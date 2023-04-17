@@ -1,14 +1,13 @@
 import '../styles/add-property.css';
-import React from 'react';
-import { useState } from 'react';
+import { React, useState } from 'react';
 
+const initialState = {
+  fields: {
+    title: '',
+  },
+};
+const [fields, setFields] = useState(initialState.fields);
 const AddProperty = () => (
-    const initialState = {
-        fields: {
-            title: '',
-        },
-    };
-    const [fields, setFields] = useState(initialState.fields);
   <div className="add-property">
     <form>
       <button type="submit">Add</button>
