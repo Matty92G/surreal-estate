@@ -1,13 +1,15 @@
 import '../styles/add-property.css';
-import { React, useState } from 'react';
+import { React, useState, useId } from 'react';
+import axios from 'axios';
 
 const AddProperty = () => {
   const initialState = {
     fields: {
+      id: useId(),
       title: '',
-      type: '',
-      bedrooms: '',
-      bathrooms: '',
+      type: 'Flat',
+      bedrooms: '1',
+      bathrooms: '1',
       price: '',
       city: 'Manchester',
       email: '',
@@ -17,13 +19,26 @@ const AddProperty = () => {
   const handleAddProperty = (event) => {
     event.preventDefault();
     console.log(fields);
+    // postData;
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
   };
+  const postData = async () => {
+    await axios
+      .post('http://localhost:3000/add-property', fields)
+      .then((res) => {
+        console.log(res);
+        console.log(res.data);
+        handleAddProperty(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div className="add-property">
-      <form onSubmit={handleAddProperty}>
+      <form onSubmit={(handleAddProperty, postData)}>
         <label htmlFor="title">
           Title
           <input

@@ -10,7 +10,7 @@ const App = () => (
     <nav>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Properties />} />
+        <Route path="/$id" element={<Properties />} />
         <Route path="add-property" element={<AddProperty />} />
       </Routes>
     </nav>
