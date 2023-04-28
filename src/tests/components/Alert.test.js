@@ -11,6 +11,7 @@ describe('Alert', () => {
   });
   it('displays an success message', () => {
     const { getByText, asFragment } = render(
+      // eslint-disable-next-line comma-dangle
       <Alert message="Success!!!!" success />
     );
     const alert = asFragment();
